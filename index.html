@@ -1,0 +1,95 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0, viewport-fit=cover">
+<title></title>
+
+<link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;600;700;800&display=swap" rel="stylesheet">
+
+<!-- Meta Pixel Code -->
+<script>
+!function(f,b,e,v,n,t,s)
+{if(f.fbq)return;n=f.fbq=function(){n.callMethod?
+n.callMethod.apply(n,arguments):n.queue.push(arguments)};
+if(!f._fbq)f._fbq=n;n.push=n;n.loaded=!0;n.version='2.0';
+n.queue=[];t=b.createElement(e);t.async=!0;t.src=v;
+s=b.getElementsByTagName(e)[0];s.parentNode.insertBefore(t,s)
+}(window, document,'script','https://connect.facebook.net/en_US/fbevents.js');
+fbq('init', '870495312392271');
+fbq('track', 'PageView');
+</script>
+<noscript><img height="1" width="1" style="display:none"
+src="https://www.facebook.com/tr?id=870495312392271&ev=PageView&noscript=1"
+/></noscript>
+
+<style>
+*{margin:0;padding:0;box-sizing:border-box}
+html,body{width:100%;height:100%;font-family:'Poppins',sans-serif;background:#000;color:#fff;overflow:hidden;display:flex;align-items:center;justify-content:center;}
+body::before{content:'';position:fixed;inset:0;background:radial-gradient(circle at top,#ff8a00 0%,transparent 40%),radial-gradient(circle at bottom,#ff005d 0%,transparent 45%);opacity:.25;z-index:0;}
+.container{z-index:2;width:100%;max-width:420px;padding:22px;text-align:center;backdrop-filter:blur(8px);}
+.logo img{width:120px;height:120px;border-radius:50%;border:4px solid #ffd54f;box-shadow:0 0 40px rgba(255,200,0,.6);}
+h1{margin-top:14px;font-size:clamp(22px,5.5vw,30px);font-weight:800;color:#ffd700;text-shadow:0 0 20px rgba(255,200,0,.6);}
+.sub{margin-top:8px;font-size:clamp(14px,4.5vw,16px);line-height:1.4;color:#f1f1f1;}
+.badge{display:inline-block;margin:14px 0;padding:6px 14px;font-size:13px;font-weight:700;border-radius:20px;background:linear-gradient(90deg,#ff1744,#ff9100);box-shadow:0 0 20px rgba(255,80,0,.6);}
+.proof{margin-top:10px;font-size:13px;color:#9effa1;}
+.btn{margin-top:18px;width:100%;padding:16px;font-size:clamp(15px,4.5vw,18px);font-weight:800;border:none;border-radius:50px;cursor:pointer;color:#000;background:linear-gradient(90deg,#ffe000,#ff9f00);box-shadow:0 0 35px rgba(255,180,0,.8);animation:pulse 1.6s infinite;}
+@keyframes pulse{0%{transform:scale(1)}50%{transform:scale(1.04)}100%{transform:scale(1)}}
+.timer{margin-top:12px;font-size:14px;font-weight:700;color:#ff5252;}
+.footer{margin-top:18px;font-size:11px;opacity:.6;}
+</style>
+</head>
+
+<body>
+
+<div class="container">
+
+  <div class="logo"><img src="logo.jpg" alt="Logo"></div>
+
+  <h1>BDG WIN || MONEY BHAI</h1>
+
+  <div class="sub">🔥 <b>Insider Live Updates</b><br>💯 Only For Serious Members</div>
+
+  
+
+  <div class="proof">👥 12,437+ Members Already Inside</div>
+
+  <button id="joinBtn" class="btn">🚀 JOIN TELEGRAM NOW</button>
+
+  <div class="timer">⏳ Access closes in <span id="countdown">25</span>s</div>
+<div class="badge">🚨 LIMITED ENTRY – JOIN NOW</div>
+  <div class="footer">⚠️ This is a private channel. Public access closes soon.</div>
+
+</div>
+
+<script>
+const TELEGRAM_LINK = "https://t.me/+btls8F6-wi8wODI1";
+let timeLeft = 25;
+const countdown = document.getElementById('countdown');
+const joinBtn = document.getElementById('joinBtn');
+
+// Countdown timer
+const timer = setInterval(()=>{
+  timeLeft--;
+  countdown.textContent = timeLeft;
+  if(timeLeft<=0){
+    clearInterval(timer);
+    trackAndRedirect();
+  }
+},1000);
+
+// Track Meta conversion + redirect
+function trackAndRedirect(){
+  // Meta Lead event
+  fbq('track', 'Lead', {channel:'telegram'});
+  window.location.href = TELEGRAM_LINK;
+}
+
+// Join button click
+joinBtn.onclick = ()=>{
+  trackAndRedirect();
+};
+</script>
+
+</body>
+</html>
